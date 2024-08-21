@@ -4,3 +4,34 @@
 	box-sizing: border-box;
 }
 
+/* BEGIN SEARCH BAR */
+#search-bar {
+	display: flex;
+	width: 100%;
+	padding: 5px 15px;
+}
+
+#search-bar .icon {
+	padding: 5px 15px;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: #b5fdc8;
+}
+
+#search-bar input {
+	border: 1px solid black;
+	outline: none;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-right: none;
+	width: 100%;
+	background-color: #b5fdc8;
+	padding: 5px 15px;
+}
+/* END SEARCH BAR */
+
+/* BEGIN LOGO */
+
