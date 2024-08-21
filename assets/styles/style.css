@@ -35,3 +35,11 @@
 
 /* BEGIN LOGO */
 
+#logo {
+	margin: 0 auto;
+	width: 80px;
+	display: block;
+	height: 80px;
+}
+
+/* END LOGO */
