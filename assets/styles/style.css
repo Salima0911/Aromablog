@@ -11,6 +11,10 @@
 	padding: 5px 15px;
 }
 
+#main-header {
+	position: relative;
+}
+
 #search-bar .icon {
 	padding: 5px 15px;
 	border-right: 1px solid black;
@@ -31,6 +35,7 @@
 	background-color: #b5fdc8;
 	padding: 5px 15px;
 }
+
 /* END SEARCH BAR */
 
 /* BEGIN LOGO */
@@ -42,4 +47,38 @@
 	height: 80px;
 }
 
+#main-menu {
+	display: flex;
+	list-style: none;
+	justify-content: space-evenly;
+	margin-top: 15px;
+}
+
+#main-menu li {
+	width: 100%;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	/* padding: 10px; */
+}
+
+#main-menu li a {
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+	/* border-bottom: 1px solid green; */
+}
+
+#main-menu li a {
+	cursor: pointer;
+}
+
+#main-menu li a:hover {
+	border-bottom: 1px solid green;
+	/* border-bottom: 1px solid green; */
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
 /* END LOGO */
