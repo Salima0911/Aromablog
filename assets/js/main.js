@@ -1,5 +1,6 @@
 window.onload = function () {
 	const searchBarInput = document.querySelector("#search-bar input");
+	const searchBarContainer = document.querySelector("#search-bar");
 	const searchBarIcon = document.querySelector("#search-bar .icon");
 	const maskOnFocusInput = document.createElement("div");
 	const body = document.querySelector("body");
@@ -11,6 +12,29 @@ window.onload = function () {
 	loader.setAttribute("src", "/assets/images/loader.gif");
 	loader.setAttribute("id", "loader");
 	maskOnFocusInput.setAttribute("class", "mask-on-focus-input");
+
+	function makeProduct(srcImg, descriptionText, titleText) {
+		const product = document.createElement("div");
+		const globalDescription = document.createElement("div");
+
+		product.setAttribute("class", "product");
+		const image = document.createElement("img");
+		image.src = srcImg;
+		const titleProduct = document.createElement("h4");
+		const titleTextNode = document.createTextNode(titleText);
+		const description = document.createElement("p");
+		const textNode = document.createTextNode(descriptionText);
+		description.appendChild(textNode);
+		titleProduct.appendChild(titleTextNode);
+
+		globalDescription.appendChild(titleProduct);
+		globalDescription.appendChild(description);
+
+		product.appendChild(image);
+		product.appendChild(globalDescription);
+
+		return product;
+	}
 
 	function getData() {
 		// On récupère les données du json émitant la base de donnée
@@ -44,6 +68,7 @@ window.onload = function () {
 			if (contentSearch.classList.contains("show")) {
 				searchBarInput.value = "";
 				contentSearch.classList.remove("show");
+				contentSearch.innerHTML = "";
 			}
 		},
 		false
@@ -59,9 +84,27 @@ window.onload = function () {
 		const isDisplayedContent = contentSearch.classList.contains("show");
 		const value = searchBarInput.value;
 		if (searchBarInput.value.length >= 5) {
+			contentSearch.innerHTML = "";
 			searchByName(value).then((result) => {
 				// @TODO
-				console.log(result);
+				contentSearch.appendChild(loader);
+				console.log("results database: ", result);
+				const products = result.map(function (product) {
+					return makeProduct(product.image, product.description, product.name);
+				});
+				console.log(
+					"result database transforme HTMLElement products: ",
+					products
+				);
+				setTimeout(function () {
+					const loader = document.querySelector("#loader");
+					if (loader) {
+						contentSearch.removeChild(loader);
+					}
+					products.forEach(function (product) {
+						contentSearch.appendChild(product);
+					});
+				}, 2000);
 			});
 			const timeout = displayContent();
 			executionTimeout.push(timeout);

@@ -86,6 +86,17 @@
 
 /* END SEARCH BAR */
 
+/* BEGIN Product */
+.product img {
+	height: 100px;
+	width: 100px;
+}
+.product {
+	width: 100%;
+	display: flex;
+	margin-bottom: 30px;
+}
+
 /* BEGIN LOGO */
 
 #logo {
