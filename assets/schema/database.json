@@ -1,0 +1,40 @@
+{
+	"produits": [
+		{
+			"id": 1,
+			"name": "huile de lavande",
+			"description": "L'huile de lavande est un produit naturel aux multiples bienfaits, reconnue pour ses propriétés apaisantes et relaxantes. Extraite des fleurs de lavande, elle est idéale pour favoriser le sommeil, réduire le stress et soulager les maux de tête. Utilisée en aromathérapie, elle peut également être appliquée sur la peau pour ses vertus antiseptiques et anti-inflammatoires. Son parfum délicat et floral en fait un choix prisé pour les soins corporels et les diffuseurs d'ambiance.",
+			"image": "https://cdn.aroma-zone.com/d_default_placeholder.png/c_fit,q_auto,f_auto,w_216/v1/ct/00713-QQXcoNL4.png"
+		},
+		{
+			"id": 2,
+			"name": "huile visage précieuse BIO",
+			"description": "L'huile de caliptus est un extrait naturel réputé pour ses propriétés apaisantes et antiseptiques. Elle est souvent utilisée en aromathérapie pour favoriser la relaxation et améliorer la respiration. Grâce à ses vertus anti-inflammatoires, elle peut également soulager les douleurs musculaires et articulaires. Cette huile essentielle est idéale pour les soins de la peau, offrant une sensation de fraîcheur et de bien-être. Son parfum rafraîchissant en fait un choix prisé pour les diffuseurs et les produits de soins personnels.",
+			"image": "https://cdn.aroma-zone.com/d_default_placeholder.png/c_fit,q_auto,f_auto,w_216/v1/ctcdn/e5f608cf-85e6-4db5-8d00-81b1960857bb/Catalogue_Huile-de-S-QBUpZFh7.png"
+		},
+		{
+			"id": 3,
+			"name": "huile d'aloévera",
+			"description": "L'huile d'aloé vera est un produit naturel aux multiples bienfaits, réputée pour ses propriétés hydratantes et apaisantes. Elle est idéale pour nourrir la peau en profondeur, favoriser la régénération cellulaire et soulager les irritations cutanées. Sa texture légère permet une absorption rapide, laissant la peau douce et souple. Utilisée régulièrement, elle contribue à un teint éclatant et à une apparence saine. Cette huile est également bénéfique pour les cheveux, leur apportant brillance et vitalité.",
+			"image": "https://cdn.aroma-zone.com/d_default_placeholder.png/c_fit,q_auto,f_auto,w_216/v1/ct/00434--TcIPk7E.png"
+		},
+		{
+			"id": 4,
+			"name": "huile de nigelle",
+			"description": "L'huile de nigel, extraite des graines de la plante Nigella sativa, est reconnue pour ses propriétés bénéfiques sur la santé et la peau. Riche en acides gras essentiels, antioxydants et vitamines, elle favorise l'hydratation, apaise les irritations cutanées et contribue à un teint éclatant. Utilisée en cosmétique, elle est idéale pour les peaux sensibles et peut également être intégrée dans l'alimentation pour renforcer le système immunitaire. Son arôme distinctif et ses multiples applications en font un produit incontournable pour le bien-être au quotidien.",
+			"image": "https://cdn.aroma-zone.com/d_default_placeholder.png/c_fit,q_auto,f_auto,w_216/v1/ct/04365-DSIuuLtU.png"
+		},
+		{
+			"id": 5,
+			"name": "huile de menthe",
+			"description": "",
+			"image": "https://cdn.aroma-zone.com/d_default_placeholder.png/c_fit,q_auto,f_auto,w_216/v1/ct/02891-SDBeiiB-.png"
+		},
+		{
+			"id": 6,
+			"name": "huile de roquette BIO vierge",
+			"description": " L'huile de serpent est un produit naturel réputé pour ses propriétés apaisantes et régénératrices. Elle est extraite de la graisse de serpent et est souvent utilisée dans les soins de la peau pour hydrater et nourrir en profondeur. Grâce à sa composition riche en acides gras essentiels, elle aide à améliorer l'élasticité de la peau et à réduire les signes de vieillissement. Ce soin polyvalent est également apprécié pour ses effets bénéfiques sur les douleurs musculaires et articulaires, offrant un soulagement rapide et efficace.",
+			"image": "https://cdn.aroma-zone.com/d_default_placeholder.png/c_fit,q_auto,f_auto,w_216/v1/ct/04209-oFYZGr-A.png"
+		}
+	]
+}
