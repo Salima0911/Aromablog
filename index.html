@@ -1,60 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, maximum-scale=1"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-		/>
-		<link rel="stylesheet" href="assets/styles/style.css" />
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+		<link rel="stylesheet" href="assets/styles/style.css"/>
+		<link rel="stylesheet" href="assets/styles/desktop.css"/>
 		<title>AromaBlog</title>
 	</head>
 	<body>
 		<header id="main-header">
 			<div id="top-header">
-				<img id="logo" src="assets/images/Logo.png" />
+				<img id="logo" src="assets/images/Logo.png"/>
 				<div id="search-bar">
-					<input type="text" placeholder="Recherchez un produit" />
+					<input type="text" placeholder="Recherchez un produit"/>
 					<div class="icon">
 						<i class="fas fa-search"></i>
 					</div>
 					<div class="content-search"></div>
 				</div>
 				<ul id="main-menu">
-					<li><a href="">S'inscrire</a></li>
-					<li><a href="">Se connecter</a></li>
+					<li>
+						<a href="">S'inscrire</a>
+					</li>
+					<li>
+						<a href="">Se connecter</a>
+					</li>
 				</ul>
+			</div>
+			<div id="top-header-desktop">
+				<div id="top">
+					<div class="left-header">
+						<div id="search-bar">
+							<input type="text" placeholder="Recherchez un produit"/>
+							<div class="icon">
+								<i class="fas fa-search"></i>
+							</div>
+							<div class="content-search"></div>
+						</div>
+						<img id="logo" src="assets/images/Logo.png"/>
+					</div>
+					<div class="right-header">
+						<ul id="main-menu">
+							<li>
+								<a href="">S'inscrire</a>
+							</li>
+							<li>
+								<a href="">Se connecter</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<nav class="menu-desktop">
+					<li>
+						<a href="#">Bien-être</a>
+					</li>
+					<li>
+						<a href="#">
+							Beauté</a>
+					</li>
+					<li>
+						<a href="#">
+							Santé</a>
+					</li>
+					<li>
+						<a href="#">Nos produits</a>
+					</li>
+					<li>
+						<a href="#">Nos missions</a>
+					</li>
+					<li>
+						<a href="#">Aromathérapie</a>
+					</li>
+				</nav>
 			</div>
 			<span id="burger"></span>
 			<nav class="menu-burger displayed hide">
 				<span class="cross"></span>
-				<li><a href="#">Bien-être</a></li>
-				<li><a href="#">Santé</a></li>
-				<li><a href="#">Recettes</a></li>
-				<li><a href="#">Nos produits</a></li>
+				<li>
+					<a href="#">Bien-être</a>
+				</li>
+				<li>
+					<a href="#">Santé</a>
+				</li>
+				<li>
+					<a href="#">Recettes</a>
+				</li>
+				<li>
+					<a href="#">Nos produits</a>
+				</li>
 			</nav>
 			<div class="description">
-				<img src="./assets/images/background.jpg" alt="" />
+				<img src="./assets/images/background.jpg" alt=""/>
 				<p class="text">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-					recusandae? Quae soluta fuga voluptatum est nihil cumque error, quia
-					ab obcaecati, aperiam quisquam asperiores quod totam magni rem,
-					facilis reiciendis.
+																																																																																					recusandae? Quae soluta fuga voluptatum est nihil cumque error, quia
+																																																																																					ab obcaecati, aperiam quisquam asperiores quod totam magni rem,
+																																																																																					facilis reiciendis.
 				</p>
 			</div>
 		</header>
@@ -62,7 +109,7 @@
 			<h2>Les Derniers Articles</h2>
 			<div class="cards-container">
 				<div class="card">
-					<img src="./assets/images/lavand.png" alt="Image 1" />
+					<img src="./assets/images/lavand.png" alt="Image 1"/>
 					<div class="card-image"></div>
 					<div class="card-content">
 						<div class="card-header">
@@ -71,7 +118,7 @@
 						</div>
 						<p>
 							Ceci est une brève description pour la première carte. Elle
-							illustre la mise en page des cartes.
+																																																																																																																							illustre la mise en page des cartes.
 						</p>
 						<button class="btn-read-more">Lire plus</button>
 						<div class="card-tags">
@@ -81,7 +128,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<img src="./assets/images/orange.png" alt="Image 1" />
+					<img src="./assets/images/orange.png" alt="Image 1"/>
 					<div class="card-image"></div>
 					<div class="card-content">
 						<div class="card-header">
@@ -90,7 +137,7 @@
 						</div>
 						<p>
 							Ceci est une brève description pour la première carte. Elle
-							illustre la mise en page des cartes.
+																																																																																																																							illustre la mise en page des cartes.
 						</p>
 						<button class="btn-read-more">Lire plus</button>
 						<div class="card-tags">
@@ -100,7 +147,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<img src="./assets/images/argan (2).png" alt="Image 1" />
+					<img src="./assets/images/argan (2).png" alt="Image 1"/>
 					<div class="card-image"></div>
 					<div class="card-content">
 						<div class="card-header">
@@ -109,7 +156,7 @@
 						</div>
 						<p>
 							Ceci est une brève description pour la première carte. Elle
-							illustre la mise en page des cartes.
+																																																																																																																							illustre la mise en page des cartes.
 						</p>
 						<button class="btn-read-more">Lire plus</button>
 						<div class="card-tags">
@@ -119,7 +166,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<img src="./assets/images/citron (2).png" alt="Image 1" />
+					<img src="./assets/images/citron (2).png" alt="Image 1"/>
 					<div class="card-image"></div>
 					<div class="card-content">
 						<div class="card-header">
@@ -128,7 +175,7 @@
 						</div>
 						<p>
 							Ceci est une brève description pour la première carte. Elle
-							illustre la mise en page des cartes.
+																																																																																																																							illustre la mise en page des cartes.
 						</p>
 						<button class="btn-read-more">Lire plus</button>
 						<div class="card-tags">
@@ -138,7 +185,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<img src="./assets/images/l’huile de jojoba (2).png" alt="Image 1" />
+					<img src="./assets/images/l’huile de jojoba (2).png" alt="Image 1"/>
 					<div class="card-image"></div>
 					<div class="card-content">
 						<div class="card-header">
@@ -147,7 +194,7 @@
 						</div>
 						<p>
 							Ceci est une brève description pour la première carte. Elle
-							illustre la mise en page des cartes.
+																																																																																																																							illustre la mise en page des cartes.
 						</p>
 						<button class="btn-read-more">Lire plus</button>
 						<div class="card-tags">
@@ -157,7 +204,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<img src="./assets/images/recin (3).png" alt="Image 1" />
+					<img src="./assets/images/recin (3).png" alt="Image 1"/>
 					<div class="card-image"></div>
 					<div class="card-content">
 						<div class="card-header">
@@ -166,7 +213,7 @@
 						</div>
 						<p>
 							Ceci est une brève description pour la première carte. Elle
-							illustre la mise en page des cartes.
+																																																																																																																							illustre la mise en page des cartes.
 						</p>
 						<button class="btn-read-more">Lire plus</button>
 						<div class="card-tags">
@@ -176,7 +223,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<img src="./assets/images/cammomille.png" alt="Image 1" />
+					<img src="./assets/images/cammomille.png" alt="Image 1"/>
 					<div class="card-image"></div>
 					<div class="card-content">
 						<div class="card-header">
@@ -185,7 +232,7 @@
 						</div>
 						<p>
 							Ceci est une brève description pour la première carte. Elle
-							illustre la mise en page des cartes.
+																																																																																																																							illustre la mise en page des cartes.
 						</p>
 						<button class="btn-read-more">Lire plus</button>
 						<div class="card-tags">
@@ -195,7 +242,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<img src="./assets/images/AMANDE.png" alt="Image 1" />
+					<img src="./assets/images/AMANDE.png" alt="Image 1"/>
 					<div class="card-image"></div>
 					<div class="card-content">
 						<div class="card-header">
@@ -204,7 +251,7 @@
 						</div>
 						<p>
 							Ceci est une brève description pour la première carte. Elle
-							illustre la mise en page des cartes.
+																																																																																																																							illustre la mise en page des cartes.
 						</p>
 						<button class="btn-read-more">Lire plus</button>
 						<div class="card-tags">
@@ -214,7 +261,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<img src="./assets/images/eucalyptus (2).png" alt="Image 1" />
+					<img src="./assets/images/eucalyptus (2).png" alt="Image 1"/>
 					<div class="card-image"></div>
 					<div class="card-content">
 						<div class="card-header">
@@ -223,7 +270,7 @@
 						</div>
 						<p>
 							Ceci est une brève description pour la première carte. Elle
-							illustre la mise en page des cartes.
+																																																																																																																							illustre la mise en page des cartes.
 						</p>
 						<button class="btn-read-more">Lire plus</button>
 						<div class="card-tags">
@@ -233,7 +280,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<img src="./assets/images/geranim A.png" alt="Image 1" />
+					<img src="./assets/images/geranim A.png" alt="Image 1"/>
 					<div class="card-image"></div>
 					<div class="card-content">
 						<div class="card-header">
@@ -242,7 +289,7 @@
 						</div>
 						<p>
 							Ceci est une brève description pour la première carte. Elle
-							illustre la mise en page des cartes.
+																																																																																																																							illustre la mise en page des cartes.
 						</p>
 						<button class="btn-read-more">Lire plus</button>
 						<div class="card-tags">
@@ -252,7 +299,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<img src="./assets/images/GINEMBRE.png" alt="Image 1" />
+					<img src="./assets/images/GINEMBRE.png" alt="Image 1"/>
 					<div class="card-image"></div>
 					<div class="card-content">
 						<div class="card-header">
@@ -261,7 +308,7 @@
 						</div>
 						<p>
 							Ceci est une brève description pour la première carte. Elle
-							illustre la mise en page des cartes.
+																																																																																																																							illustre la mise en page des cartes.
 						</p>
 						<button class="btn-read-more">Lire plus</button>
 						<div class="card-tags">
@@ -271,7 +318,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<img src="./assets/images//menth-poivree (3).png" alt="Image 1" />
+					<img src="./assets/images//menth-poivree (3).png" alt="Image 1"/>
 					<div class="card-image"></div>
 					<div class="card-content">
 						<div class="card-header">
@@ -280,7 +327,7 @@
 						</div>
 						<p>
 							Ceci est une brève description pour la première carte. Elle
-							illustre la mise en page des cartes.
+																																																																																																																							illustre la mise en page des cartes.
 						</p>
 						<button class="btn-read-more">Lire plus</button>
 						<div class="card-tags">
@@ -290,7 +337,7 @@
 					</div>
 				</div>
 				<div class="card">
-					<img src="./assets/images/romarin (2).png" alt="Image 1" />
+					<img src="./assets/images/romarin (2).png" alt="Image 1"/>
 					<div class="card-image"></div>
 					<div class="card-content">
 						<div class="card-header">
@@ -299,7 +346,7 @@
 						</div>
 						<p>
 							Ceci est une brève description pour la première carte. Elle
-							illustre la mise en page des cartes.
+																																																																																																																							illustre la mise en page des cartes.
 						</p>
 						<button class="btn-read-more">Lire plus</button>
 						<div class="card-tags">
@@ -314,27 +361,21 @@
 				<div class="cards-container">
 					<div class="cart">
 						<div class="cart-image">
-							<img
-								src="./assets/images/chelsea-shapouri-r40EYKVyutI-unsplash 1.png"
-								alt="Image 2"
-							/>
+							<img src="./assets/images/chelsea-shapouri-r40EYKVyutI-unsplash 1.png" alt="Image 2"/>
 							<button class="btn-cat">Lire plus</button>
 							<div class="mask-card"></div>
 						</div>
 					</div>
 					<div class="cart">
 						<div class="cart-image">
-							<img
-								src="./assets/images/content-pixie-TxBQ7yLj6JU-unsplash 1.png"
-								height="100%"
-							/>
+							<img src="./assets/images/content-pixie-TxBQ7yLj6JU-unsplash 1.png" height="100%"/>
 							<button class="btn-cat">Lire plus</button>
 							<div class="mask-card"></div>
 						</div>
 					</div>
 					<div class="cart">
 						<div class="cart-image">
-							<img src="./assets/images/Recettes.png" alt="Image 2" />
+							<img src="./assets/images/Recettes.png" alt="Image 2"/>
 							<button class="btn-cat">Lire plus</button>
 							<div class="mask-card"></div>
 						</div>
@@ -346,45 +387,71 @@
 					<h2 class="title-left">Nos Engagement</h2>
 					<p class="text">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-						recusandae? Quae soluta fuga voluptatum est nihil cumque error, quia
-						ab obcaecati, aperiam quisquam asperiores quod totam magni rem,
-						facilis reiciendis.
+																																																																																																						recusandae? Quae soluta fuga voluptatum est nihil cumque error, quia
+																																																																																																						ab obcaecati, aperiam quisquam asperiores quod totam magni rem,
+																																																																																																						facilis reiciendis.
 					</p>
 					<button class="btn-engag">Lire plus</button>
 				</div>
-				<img src="./assets/images/plantes.png" alt="" />
+				<img src="./assets/images/plantes.png" alt=""/>
 			</div>
 			<footer>
 				<div class="qui-somme-nous">
 					<h4>Qui nous sommes</h4>
 					<ul class="footer-menu">
-						<li><a href="#"> Nos engagements </a></li>
-						<li><a href="#">+33 67 29 94 56 </a></li>
-						<li><a href="#">formulaire de contact</a></li>
+						<li>
+							<a href="#">
+								Nos engagements
+							</a>
+						</li>
+						<li>
+							<a href="#">+33 67 29 94 56
+							</a>
+						</li>
+						<li>
+							<a href="#">formulaire de contact</a>
+						</li>
 					</ul>
 				</div>
 				<div class="reglement">
 					<h4>Réglement</h4>
 					<ul class="footer-menu">
-						<li><a href="#">Conditions générales de vente </a></li>
-						<li><a href="#">Mentions légales </a></li>
-						<li><a href="#">Politique de confidentialité</a></li>
+						<li>
+							<a href="#">Conditions générales de vente
+							</a>
+						</li>
+						<li>
+							<a href="#">Mentions légales
+							</a>
+						</li>
+						<li>
+							<a href="#">Politique de confidentialité</a>
+						</li>
 					</ul>
 				</div>
 				<div class="iformations">
 					<h4>Informations</h4>
 					<ul class="footer-menu">
-						<li><a href="#">Informations </a></li>
-						<li><a href="#">Aromathérapie </a></li>
-						<li><a href="#">F.A.Q.</a></li>
+						<li>
+							<a href="#">Informations
+							</a>
+						</li>
+						<li>
+							<a href="#">Aromathérapie
+							</a>
+						</li>
+						<li>
+							<a href="#">F.A.Q.</a>
+						</li>
 					</ul>
 				</div>
-				<div class="iocn-reseau-sociciaux">
+				<div
+					class="iocn-reseau-sociciaux">
 					<!-- <i class="reseau fa-brands fa-x-twitter"></i>
-					<i class="reseau fa-brands fa-youtube"></i>
-					<i class="reseau fa-brands fa-facebook"></i>
-					<i class="reseau fa-brands fa-instagram"></i>
-					<i class="reseau fa-brands fa-discord"></i> -->
+																																																																																					<i class="reseau fa-brands fa-youtube"></i>
+																																																																																					<i class="reseau fa-brands fa-facebook"></i>
+																																																																																					<i class="reseau fa-brands fa-instagram"></i>
+																																																																																					<i class="reseau fa-brands fa-discord"></i> -->
 					<a href="#" class="icon-footer twitter"></a>
 					<a href="#" class="icon-footer facebook"></a>
 					<a href="#" class="icon-footer youtube"></a>
@@ -393,7 +460,7 @@
 					<a href="#" class="icon-footer linkedin"></a>
 				</div>
 				<div class="logo">
-					<img src="assets/images/Logo.png" alt="" />
+					<img src="assets/images/Logo.png" alt=""/>
 				</div>
 			</footer>
 		</main>

@@ -123,32 +123,36 @@ h2 {
 	height: 80px;
 }
 
-#main-menu {
+#top-header-desktop {
+	display: none;
+}
+
+#top-header #main-menu {
 	display: flex;
 	list-style: none;
 	justify-content: space-evenly;
 	margin-top: 15px;
 }
 
-#main-menu li {
+#top-header #main-menu li {
 	width: 100%;
 	text-align: center;
 	border-bottom: 1px solid #ccc;
 	/* padding: 10px; */
 }
 
-#main-menu li a {
+#top-header #main-menu li a {
 	text-decoration: none;
 	padding: 10px;
 	display: block;
 	/* border-bottom: 1px solid green; */
 }
 
-#main-menu li a {
+#top-header #main-menu li a {
 	cursor: pointer;
 }
 
-#main-menu li a:hover {
+#top-header #main-menu li a:hover {
 	border-bottom: 1px solid green;
 	/* border-bottom: 1px solid green; */
 }
@@ -294,8 +298,8 @@ a {
 	position: relative;
 }
 
-img {
-	width: 35%;
+.card img {
+	width: 45%;
 	height: 100%;
 	display: block;
 	object-fit: cover;
