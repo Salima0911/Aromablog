@@ -1,0 +1,10 @@
+{
+    "name": "Saly/aromablog",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Saly\\Aromablog\\": "src/"
+        }
+    },
+    "require": {}
+}

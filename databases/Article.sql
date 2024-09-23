@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS Article;
+
+CREATE TABLE Article (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(100) NOT NULL,
+    content LONGTEXT NOT NULL
+) engine = 'Innodb';
