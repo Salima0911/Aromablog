@@ -1,6 +1,6 @@
-@media screen and (min-width: 600px) and (max-width: 1400px) {
+@media screen and (min-width: 765px) and (max-width: 1024px) {
 	.card img {
-		width: 100%;
+		/* width: 100%; */
 		height: 300px;
 		object-fit: cover;
 	}
@@ -11,7 +11,7 @@
 	}
 
 	.cards-container {
-		gap:30px;
+		gap: 1rem;
 	}
 
 	.cart {
@@ -19,15 +19,40 @@
 	}
 }
 
-@media screen and (min-width: 600px) and (max-width: 764px){
-
+@media screen and (min-width: 600px) and (max-width: 764px) {
 	.card {
 		flex-basis: 100%;
 	}
-
 }
+@media screen and (min-width: 1097px) and (max-width: 3840px) {
+	#top-header {
+		display: none;
+	}
 
-@media screen and (min-width: 980px) and (max-width: 1920px) {
+	#burger {
+		display: none;
+	}
+
+	#top-header-desktop {
+		display: flex;
+	}
+
+	#top {
+		display: flex;
+		flex-basis: 100%;
+	}
+
+	#search-bar input {
+		width: 350px;
+	}
+
+	#search-bar {
+		width: auto;
+	}
+
+	.menu-desktop {
+		display: flex;
+	}
 	.card {
 		flex-basis: 300px;
 		flex-direction: column;
@@ -38,7 +63,35 @@
 	}
 	.card img {
 		width: 100%;
+		flex-grow: 1;
 	}
+
+	.engagement {
+		flex-direction: row;
+	}
+
+	.engage {
+		justify-content: center;
+	}
+	.cart {
+		width: 350px;
+	}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1096px) {
+	.card {
+		flex-basis: 300px;
+		flex-direction: column;
+		margin-right: 20px;
+	}
+	.cart {
+		width: 100%;
+	}
+	.card img {
+		width: 100%;
+		flex-grow: 1;
+	}
+
 	.engagement {
 		flex-direction: row;
 	}
@@ -62,10 +115,8 @@
 	#search-bar {
 		width: auto;
 	}
-
 	#top-header-desktop {
 		display: flex;
-		flex-direction: column;
 	}
 
 	#top {
@@ -75,41 +126,6 @@
 
 	.menu-desktop {
 		display: flex;
-		background: #3e454c;
-		list-style: none;
-		justify-content: space-evenly;
-	}
-
-	.menu-desktop li a {
-		display: block;
-		padding: 30px;
-		text-decoration: none;
-		color: white;
-	}
-
-	.left-header {
-		display: flex;
-		/* background: red; */
-		flex-grow: 8;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.right-header {
-		flex-grow: 1;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 15px;
-		/* background: green; */
-	}
-
-	#top-header-desktop #main-menu {
-		display: flex;
-		list-style: none;
-		width: 100%;
-		justify-content: space-evenly;
-		margin-top: 15px;
 	}
 
 	#top-header-desktop #main-menu li {
