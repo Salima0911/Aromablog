@@ -11,7 +11,8 @@ $routes = [
     '/politique' => 'PolitiqueController.php',
     '/recover' => 'RecoverController.php',
     '/membre' => 'MembreController.php',
-    '/logout' => 'LogoutController.php'
+    '/logout' => 'LogoutController.php',
+    '/article' => 'ArticleController.php'
 ];
 
 if (array_key_exists($uri, $routes)) {

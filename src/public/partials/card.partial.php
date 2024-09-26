@@ -17,18 +17,19 @@ $images = [
 ?>
 
 <?php foreach ($articles as $key => $article): ?>
-    <?php //var_dump($key) ?>
+    <?php //var_dump($key) 
+    ?>
     <div class="card">
-        <img src="<?=$images[$key]?>" alt="Image 1" />
+        <img src="<?= $images[$key] ?>" alt="Image 1" />
         <div class="card-content">
             <div class="card-header">
-                <h3><?=$article['title']?></h3>
+                <h3><?= $article['title'] ?></h3>
                 <div class="btn-fav"></div>
             </div>
             <p>
-                <?=substr($article['content'], 0, 100).'...';?>
+                <?= substr($article['content'], 0, 100) . '...'; ?>
             </p>
-            <button class="btn-read-more">Lire plus</button>
+            <a class="btn-read-more" href="/article?id=<?= $article['id'] ?>">Lire plus</a>
             <div class="card-tags">
                 <button class="btn-tag">Santé</button>
                 <button class="btn-tag">Bien-être</button>

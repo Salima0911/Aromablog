@@ -15,6 +15,9 @@
             <li>
                 <a href="">Se connecter</a>
             </li>
+            <?php if (isset($_SESSION['user'])): ?>
+                <li><img src="<?= $_SESSION['user'][0]['picture'] ?>" alt=""></li>
+            <?php endif; ?>
         </ul>
     </div>
     <div id="top-header-desktop">
@@ -32,11 +35,14 @@
             <div class="right-header">
                 <ul id="main-menu">
                     <li>
-                        <a href="">S'inscrire</a>
+                        <a href="/register">S'inscrire</a>
                     </li>
                     <li>
-                        <a href="">Se connecter</a>
+                        <a href="/login">Se connecter</a>
                     </li>
+                    <?php if (isset($_SESSION['user'])): ?>
+                        <li><img class="imgProfil" src="<?= $_SESSION['user'][0]['picture'] ?>" alt=""></li>
+                    <?php endif; ?>
                 </ul>
             </div>
         </div>

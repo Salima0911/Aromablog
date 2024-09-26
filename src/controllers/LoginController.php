@@ -15,7 +15,6 @@
 
 
 require '../models/User.php';
-session_start();
 
 if (isset($_SESSION['user'])) {
     header('location: /membre');
@@ -24,14 +23,24 @@ if (isset($_SESSION['user'])) {
 if (isset($_POST['login'])) {
     extract($_POST);
     $result = $coupleEmailPasswordExist($email, $password);
+    var_dump($result);
+    var_dump($_POST);
     if ($result) {
-        session_start();
         $_SESSION['user'] = $getAllUserDatas($email, $password);
-        header("location: /membre");
+        if (isset($_SESSION['required_auth'])) {
+            $uriRequiredAuth = $_SESSION['required_auth'];
+            unset($_SESSION['required_auth']);
+            header("location: $uriRequiredAuth");
+        } else {
+            header("location: /membre");
+        }
     }
 
     // var_dump($result);
 }
+
+
+
 
 
 require '../public/views/login.view.php';

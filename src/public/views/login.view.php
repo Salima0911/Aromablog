@@ -6,14 +6,18 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/header.partial.php';
 
 
 <main id="connect">
+    <?php if (isset($_SESSION['message']['info'])): ?>
+        <p class='message info'><?= $_SESSION['message']['info'] ?></p>
+        <?php unset($_SESSION['message']['info']); ?>
+    <?php endif; ?>
     <img src="./image/image (6).png" alt="" />
 
     <div class="wrapper">
         <h1>Se connecter</h1>
         <form action="#" method="post">
-            <input type="email" name="email" placeholder="E-mail" />
+            <input type="text" name="email" placeholder="E-mail" />
             <input type="password" name="password" placeholder="Mot de passe" />
-            <button name="login">Se connecter</button>
+            <input name="login" type="submit" value="Se connecter" />
             <label class="container-checkbox">Se souvenir de moi
                 <input type="checkbox" />
                 <span class="check"></span>
