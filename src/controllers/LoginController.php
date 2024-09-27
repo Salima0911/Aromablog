@@ -23,8 +23,6 @@ if (isset($_SESSION['user'])) {
 if (isset($_POST['login'])) {
     extract($_POST);
     $result = $coupleEmailPasswordExist($email, $password);
-    var_dump($result);
-    var_dump($_POST);
     if ($result) {
         $_SESSION['user'] = $getAllUserDatas($email, $password);
         if (isset($_SESSION['required_auth'])) {
