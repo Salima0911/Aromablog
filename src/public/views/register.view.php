@@ -1,15 +1,15 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/head.partial.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/header.partial.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/header-other.partial.php';
 ?>
 <main id="register">
     <img src="../assets/image/4.jpg" alt="" />
+    <h1>Inscription</h1>
     <div class="wrapper">
-        <h1>Inscription</h1>
         <div class="link">
             <a href="#">Déjà inscrit ? Connectez-vous sur votre compte</a>
         </div>
-        <p class="info">
+        <p class="info-register">
             Pour une sécurité optimale de votre mot de passe, nous vous
             conseillons 8 caractères minimum composés d’au moins une minuscule,
             une majuscule, un chiffre (0-9) et une ponctuation.
@@ -30,7 +30,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/header.partial.php';
                     placeholder="Répétez votre mot de passe" />
             </div>
             <!-- <input type="submit" name="register" value="S'inscrire"> -->
-            <button name="register">S'inscrire</button>
+            <div class="form-control">
+                <button name="register">S'inscrire</button>
+            </div>
         </form>
     </div>
 </main>

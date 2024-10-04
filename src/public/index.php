@@ -1,3 +1,5 @@
 <?php
 session_start();
-require '../config/Router.php';
+define('BASE_PATH', __DIR__.'/../');
+
+require BASE_PATH.'config/Router.php';

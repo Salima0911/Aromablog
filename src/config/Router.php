@@ -1,9 +1,8 @@
 <?php
 
 $uri = parse_url($_SERVER['REQUEST_URI'])['path'];
-$dir = explode('\public', $_SERVER['DOCUMENT_ROOT'])[0] . '/controllers/';
-
-// var_dump($uri);
+$dir = explode('/public', $_SERVER['DOCUMENT_ROOT'])[0] . '/controllers/';
+// $dir = BASE_PATH;
 $routes = [
     '/' => 'HomeController.php',
     '/login' => 'LoginController.php',
@@ -15,8 +14,8 @@ $routes = [
     '/article' => 'ArticleController.php'
 ];
 
-if (array_key_exists($uri, $routes)) {
-    require_once($dir . $routes[$uri]);
+if (array_key_exists($uri, $routes)) {  
+    require_once($dir.$routes[$uri]);
 } else {
     http_response_code(404);
     require_once($dir . '404.php');

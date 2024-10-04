@@ -22,4 +22,4 @@ require '../models/Article.php';
 // echo 'je suis le controller';
 
 
-require '../public/views/accueil.view.php';
+require '../public/views/home.view.php';

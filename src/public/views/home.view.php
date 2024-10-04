@@ -10,27 +10,27 @@ $articles = $fourthLastArticles();
 	<div class="cards-container">
 		<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/card.partial.php' ?>
 	</div>
-	<div class="cards-categorie">
+	<div id="categories" class="cards-categorie">
 		<h2>Nos categories</h2>
 		<div class="cards-container">
 			<div class="cart">
 				<div class="cart-image">
 					<img src="./assets/images/chelsea-shapouri-r40EYKVyutI-unsplash 1.png" alt="Image 2" />
-					<button class="btn-cat">Lire plus</button>
+					<button class="btn-cat">Santé</button>
 					<div class="mask-card"></div>
 				</div>
 			</div>
 			<div class="cart">
 				<div class="cart-image">
 					<img src="./assets/images/content-pixie-TxBQ7yLj6JU-unsplash 1.png" height="100%" />
-					<button class="btn-cat">Lire plus</button>
+					<button class="btn-cat">Beauté</button>
 					<div class="mask-card"></div>
 				</div>
 			</div>
 			<div class="cart">
 				<div class="cart-image">
 					<img src="./assets/images/Recettes.png" alt="Image 2" />
-					<button class="btn-cat">Lire plus</button>
+					<button class="btn-cat">Bien être</button>
 					<div class="mask-card"></div>
 				</div>
 			</div>

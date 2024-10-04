@@ -1,6 +1,6 @@
 @media screen and (min-width: 765px) and (max-width: 1024px) {
 	.card img {
-		/* width: 100%; */
+		width: 100%!important;
 		height: 300px;
 		object-fit: cover;
 	}
@@ -25,16 +25,68 @@
 		text-align: center;
 		padding: 10px;
 	}
+
+	footer {
+		display:flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: normal;
+		padding: 30px;
+	}
+
+	.qui-somme-nous .iocn-reseau-sociciaux {
+		display:flex;
+	}
+
+	.iocn-reseau-sociciaux {
+		display:none;
+	}
 }
 
 @media screen and (min-width: 600px) and (max-width: 764px) {
 	.card {
 		flex-basis: 100%;
 	}
+
+	footer {
+		display:flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: normal;
+		padding: 30px;
+	}
+
+	.qui-somme-nous .iocn-reseau-sociciaux {
+		display:flex;
+	}
+
+	.iocn-reseau-sociciaux {
+		display:none;
+	}
 }
 @media screen and (min-width: 1097px) and (max-width: 3840px) {
+	footer {
+		display:flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: normal;
+		padding: 30px;
+	}
+
+	.qui-somme-nous .iocn-reseau-sociciaux {
+		display:flex;
+	}
+
+	.iocn-reseau-sociciaux {
+		display:none;
+	}
+
 	#top-header {
 		display: none;
+	}
+
+	.info-register {
+		width: 550px;
 	}
 
 	.message {
@@ -70,11 +122,13 @@
 	.menu-desktop {
 		display: flex;
 	}
+
 	.card {
 		flex-basis: 300px;
 		flex-direction: column;
 		margin-right: 20px;
 	}
+
 	.cart {
 		width: 300px;
 	}
@@ -90,20 +144,70 @@
 	.engage {
 		justify-content: center;
 	}
+
 	.cart {
 		width: 350px;
+	}
+
+	.wrapper{
+		width: 550px;
+		border-radius: 10px;
+		margin-bottom: 30px;
+	}
+
+	#register h1 {
+		padding:26px;
+	}
+
+	#connect h1 {
+		padding: 26px;
 	}
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1096px) {
+	footer {
+		display:flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		padding: 30px;
+	}
+
+	.qui-somme-nous .iocn-reseau-sociciaux {
+		display:flex;
+	}
+
+	.iocn-reseau-sociciaux {
+		display:none;
+	}
+
 	.card {
 		flex-basis: 300px;
 		flex-direction: column;
 		margin-right: 20px;
 	}
+
+	.info-register {
+		width: 550px;
+	}
+
+	.wrapper{
+		width: 550px;
+		border-radius: 10px;
+		margin-bottom: 30px;
+	}
+
+	#register h1 {
+		padding:26px;
+	}
+
+	#connect h1 {
+		padding: 26px;
+	}
+
 	.cart {
 		width: 100%;
 	}
+
 	.card img {
 		width: 100%;
 		flex-grow: 1;
@@ -152,5 +256,6 @@
 		/* padding: 10px; */
 	}
 }
+
 @media screen and (min-width: 600px) and (max-width: 1400px) {
 }

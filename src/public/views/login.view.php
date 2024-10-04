@@ -1,10 +1,8 @@
 <?php
 
 require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/head.partial.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/header.partial.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/header-other.partial.php';
 ?>
-
-
 <main id="connect">
     <?php if (isset($_SESSION['message']['info'])): ?>
         <p class='message info'><?= $_SESSION['message']['info'] ?></p>
@@ -12,9 +10,9 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/header.partial.php';
     <?php endif; ?>
     <img src="./image/image (6).png" alt="" />
 
+    <h1>Se connecter</h1>
     <div class="wrapper">
-        <h1>Se connecter</h1>
-        <form action="#" method="post">
+        <form id="connexion" action="#" method="post">
             <input type="text" name="email" placeholder="E-mail" />
             <input type="password" name="password" placeholder="Mot de passe" />
             <input name="login" type="submit" value="Se connecter" />

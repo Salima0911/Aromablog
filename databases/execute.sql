@@ -4,16 +4,16 @@ use aromablog;
 
 -- CREATION ENTITIES
 
-source C:\Users\utilisateur\Documents\aromablog\databases\user.sql
-source C:\Users\utilisateur\Documents\aromablog\databases\recipe.sql
-source C:\Users\utilisateur\Documents\aromablog\databases\categorie.sql
-source C:\Users\utilisateur\Documents\aromablog\databases\article.sql
-source C:\Users\utilisateur\Documents\aromablog\databases\tag.sql
-source C:\Users\utilisateur\Documents\aromablog\databases\article_tag.sql
-source C:\Users\utilisateur\Documents\aromablog\databases\comment.sql
-source C:\Users\utilisateur\Documents\aromablog\databases\picture.sql
+source C:\Users\Utilisateur\Documents\lepoles\projet\Aromablog\databases\user.sql
+source C:\Users\Utilisateur\Documents\lepoles\projet\Aromablog\databases\recipe.sql
+source C:\Users\Utilisateur\Documents\lepoles\projet\Aromablog\databases\categorie.sql
+source C:\Users\Utilisateur\Documents\lepoles\projet\Aromablog\databases\article.sql
+source C:\Users\Utilisateur\Documents\lepoles\projet\Aromablog\databases\tag.sql
+source C:\Users\Utilisateur\Documents\lepoles\projet\Aromablog\databases\article_tag.sql
+source C:\Users\Utilisateur\Documents\lepoles\projet\Aromablog\databases\comment.sql
+source C:\Users\Utilisateur\Documents\lepoles\projet\Aromablog\databases\picture.sql
 
 
 -- FAKE DATAS 
 
-source C:\Users\utilisateur\Documents\aromablog\databases\fake-datas\execute-fake-datas.sql
+source C:\Users\Utilisateur\Documents\lepoles\projet\Aromablog\databases\fake-datas\execute-fake-datas.sql

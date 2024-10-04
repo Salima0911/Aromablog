@@ -15,14 +15,23 @@
                 <a href="#">formulaire de contact</a>
             </li>
         </ul>
+        <div
+        class="iocn-reseau-sociciaux">
+        <!-- <i class="reseau fa-brands fa-x-twitter"></i>																																																																																<i class="reseau fa-brands fa-youtube"></i>
+																																																																																					<i class="reseau fa-brands fa-facebook"></i>
+																																																																																					<i class="reseau fa-brands fa-instagram"></i>
+																																																																																					<i class="reseau fa-brands fa-discord"></i> -->
+        <a href="#" class="icon-footer twitter"></a>
+        <a href="#" class="icon-footer facebook"></a>
+        <a href="#" class="icon-footer youtube"></a>
+        <a href="#" class="icon-footer instagram"></a>
+        <a href="#" class="icon-footer discord"></a>
+        <a href="#" class="icon-footer linkedin"></a>
+    </div>
     </div>
     <div class="reglement">
         <h4>Réglement</h4>
         <ul class="footer-menu">
-            <li>
-                <a href="#">Conditions générales de vente
-                </a>
-            </li>
             <li>
                 <a href="#">Mentions légales
                 </a>
@@ -50,8 +59,7 @@
     </div>
     <div
         class="iocn-reseau-sociciaux">
-        <!-- <i class="reseau fa-brands fa-x-twitter"></i>
-																																																																																					<i class="reseau fa-brands fa-youtube"></i>
+        <!-- <i class="reseau fa-brands fa-x-twitter"></i>																																																																																<i class="reseau fa-brands fa-youtube"></i>
 																																																																																					<i class="reseau fa-brands fa-facebook"></i>
 																																																																																					<i class="reseau fa-brands fa-instagram"></i>
 																																																																																					<i class="reseau fa-brands fa-discord"></i> -->
