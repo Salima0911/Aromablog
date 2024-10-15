@@ -1,7 +1,7 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/head.partial.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/header.partial.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/base/head.partial.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/base/header.partial.php';
 
 ?>
 
@@ -18,4 +18,4 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/header.partial.php';
         </div>
     </section>
 </main>
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.partial.php'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/base/footer.partial.php'; ?>

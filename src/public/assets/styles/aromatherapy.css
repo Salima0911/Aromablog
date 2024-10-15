@@ -1,0 +1,103 @@
+.aroma-main {
+	height: 100%;
+}
+*/ .aroma {
+	width: 100%;
+	background-color: aquamarine;
+	height: 200px;
+}
+.img-aromath img {
+	height: 40vh;
+	object-fit: fill;
+	width: 100%;
+}
+.aromatherap {
+	background-image: url("/assets/images/aromat.png");
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* background-color: aquamarine; */
+	height: 50vh;
+}
+
+.img-aromath {
+	text-align: center;
+	font-size: 50px;
+	color: #006168;
+
+	padding: 20px;
+}
+#main-aromath {
+	padding: 10px;
+	/* background-color: aquamarine; */
+	margin: auto;
+	width: 80%;
+	line-height: 30px;
+	/* display: flex;
+	flex-direction: row-reverse; */
+}
+
+.desc aside img {
+	height: 40%;
+	width: 450px;
+	object-fit: cover;
+}
+
+.desc {
+	display: flex;
+	flex-direction: row-reverse;
+	margin-top: 30px;
+}
+
+.content-aroma {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+}
+
+/* .aromatherap{
+	font-size: 50px;
+	align-items: center;
+	justify-items: center;
+	align-items: center;
+} */
+
+/* 
+.aroma img{
+	height: 70vh;
+} */
+span {
+	color: white;
+	font-weight: bolder;
+}
+
+.section-title {
+	margin-left: 20px;
+}
+
+.section-title h2 {
+	font-size: 20px;
+	color: #006168;
+	text-align: left;
+}
+.section-title h1 {
+	font-size: 50px;
+
+	color: #006168;
+}
+
+ul.aromat {
+	padding: 0;
+	margin: 0;
+}
+
+.aromat li {
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+.aromat {
+	display: block;
+}

@@ -5,7 +5,7 @@ CREATE TABLE user (
     email VARCHAR(255) NOT NULL,
     mdp VARCHAR(255) NOT NULL,
     role ENUM("visiteur", "auteur", "admin") NOT NULL,
-    picture VARCHAR(255) DEFAULT 'unknow.jpg',
+    picture VARCHAR(255) DEFAULT '/assets/images/unknow.jpg',
     date_register BIGINT UNSIGNED DEFAULT UNIX_TIMESTAMP()
 );
 

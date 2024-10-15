@@ -11,11 +11,13 @@ $routes = [
     '/recover' => 'RecoverController.php',
     '/membre' => 'MembreController.php',
     '/logout' => 'LogoutController.php',
-    '/article' => 'ArticleController.php'
+    '/article' => 'ArticleController.php',
+    '/aromatherapy' => 'AromatherapyController.php',
+    '/writer' => 'WriterController.php'
 ];
 
-if (array_key_exists($uri, $routes)) {  
-    require_once($dir.$routes[$uri]);
+if (array_key_exists($uri, $routes)) {
+    require_once($dir . $routes[$uri]);
 } else {
     http_response_code(404);
     require_once($dir . '404.php');

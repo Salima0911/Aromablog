@@ -1,14 +1,37 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/head.partial.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/header.partial.php';
-
+require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/base/head.partial.php';
+//require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/base/header.partial.php';
 $articles = $fourthLastArticles();
 ?>
+<header id="main-header">
+	<div id="top-header">
+		<!-- <img id="logo" src="assets/images/Logo.png" /> -->
+		<div class="splited">
+			<?php require($_SERVER['DOCUMENT_ROOT'] . '/partials/components/header/sub-menu.component.php'); ?>
+			<?php require($_SERVER['DOCUMENT_ROOT'] . '/partials/components/header/search-bar.component.php'); ?>
+		</div>
+		<?php require($_SERVER['DOCUMENT_ROOT'] . '/partials/components/header/main-menu.component.php'); ?>
+	</div>
+	<div id="top-header-desktop">
+		<div id="top">
+			<div class="left-header">
+				<img id="logo" src="assets/images/Logo.png" />
+				<?php require($_SERVER['DOCUMENT_ROOT'] . '/partials/components/header/search-bar.component.php'); ?>
+			</div>
+			<div class="right-header">
+				<?php require($_SERVER['DOCUMENT_ROOT'] . '/partials/components/header/main-menu.component.php'); ?>
+				<?php require($_SERVER['DOCUMENT_ROOT'] . '/partials/components/header/sub-menu.component.php'); ?>
+			</div>
+		</div>
+		<?php require($_SERVER['DOCUMENT_ROOT'] . '/partials/components/header/nav-desktop.component.php'); ?>
+	</div>
+</header>
+
 <main id="main-container">
 	<h2>Les Derniers Articles</h2>
 	<div class="cards-container">
-		<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/card.partial.php' ?>
+		<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/components/card.component.php' ?>
 	</div>
 	<div id="categories" class="cards-categorie">
 		<h2>Nos categories</h2>
@@ -30,7 +53,7 @@ $articles = $fourthLastArticles();
 			<div class="cart">
 				<div class="cart-image">
 					<img src="./assets/images/Recettes.png" alt="Image 2" />
-					<button class="btn-cat">Bien être</button>
+					<button   class="btn-cat">Bien être</button>
 					<div class="mask-card"></div>
 				</div>
 			</div>
@@ -52,4 +75,4 @@ $articles = $fourthLastArticles();
 </main>
 
 
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.partial.php'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/base/footer.partial.php'; ?>

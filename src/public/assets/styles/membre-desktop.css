@@ -1,0 +1,99 @@
+@media screen and (min-width: 1097px) and (max-width: 3840px) {
+	footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: normal;
+		padding: 30px;
+	}
+
+	.qui-somme-nous .iocn-reseau-sociciaux {
+		display: flex;
+	}
+
+	.iocn-reseau-sociciaux {
+		display: none;
+	}
+
+	#top-header {
+		display: none;
+	}
+
+	.info-register {
+		width: 550px;
+	}
+
+	.message {
+		font-size: 20px;
+		width: 48%;
+		color: white;
+		text-align: center;
+		padding: 10px;
+		margin: 0 auto;
+	}
+
+	#burger {
+		display: none;
+	}
+
+	#top-header-desktop {
+		display: flex;
+	}
+
+	#top {
+		display: flex;
+		flex-basis: 100%;
+	}
+
+	#search-bar input {
+		width: 350px;
+	}
+
+	#search-bar {
+		width: auto;
+	}
+
+	.menu-desktop {
+		display: flex;
+	}
+
+	.card {
+		flex-basis: 300px;
+		flex-direction: column;
+		margin-right: 20px;
+	}
+
+	.cart {
+		width: 300px;
+	}
+	.card img {
+		width: 100%;
+		flex-grow: 1;
+	}
+
+	.engagement {
+		flex-direction: row;
+	}
+
+	.engage {
+		justify-content: center;
+	}
+
+	.cart {
+		width: 350px;
+	}
+
+	.wrapper {
+		width: 550px;
+		border-radius: 10px;
+		margin-bottom: 30px;
+	}
+
+	#register h1 {
+		padding: 26px;
+	}
+
+	#connect h1 {
+		padding: 26px;
+	}
+    }

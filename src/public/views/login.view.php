@@ -1,8 +1,39 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/head.partial.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/header-other.partial.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/base/head.partial.php';
+//require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/base/header-without-search-bar.partial.php';
 ?>
+<header id="main-header" class="background-nav">
+    <div id="top-header">
+        <img id="logo" src="assets/images/Logo.png" />
+        <?php require($_SERVER['DOCUMENT_ROOT'] . '/partials/components/header/main-menu.component.php'); ?>
+    </div>
+    <div id="top-header-desktop">
+        <div id="top">
+            <div class="left-header">
+                <img id="logo" src="assets/images/Logo.png" />
+            </div>
+            <div class="right-header">
+                <?php require($_SERVER['DOCUMENT_ROOT'] . '/partials/components/header/main-menu.component.php'); ?>
+            </div>
+        </div>
+    </div>
+    <?php //require($_SERVER['DOCUMENT_ROOT'] . '/partials/components/header/top-header-desktop.component.php'); 
+    ?>
+</header>
+<?php if (!empty($errors)): ?>
+    <div class="errors">
+        <ul>
+            <?php foreach ($errors as $error): ?>
+                <li><?= htmlspecialchars($error) ?></li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+
+<?php elseif ($success): ?>
+    <p>Connexion réussie !</p>
+<?php endif; ?>
+
 <main id="connect">
     <?php if (isset($_SESSION['message']['info'])): ?>
         <p class='message info'><?= $_SESSION['message']['info'] ?></p>
@@ -28,4 +59,4 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/header-other.partial.php';
     </div>
 </main>
 
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/footer.partial.php'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/partials/base/footer.partial.php'; ?>
